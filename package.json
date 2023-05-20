@@ -1,11 +1,12 @@
 {
-  "name": "dicoding-grave-discover",
+  "name": "dicoding-grave-discover-backend",
   "version": "1.0.0",
   "main": "./src/index.js",
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
     "dev": "npx nodemon",
+    "bundle": "cd frontend && npx webpack --config client/webpack.config.js",
     "table:status": "npx knex migrate:status",
     "table:clear": "npx knex migrate:rollback",
     "table:build": "npx knex migrate:latest",
