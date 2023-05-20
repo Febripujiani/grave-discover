@@ -4,7 +4,12 @@ const path = require("path");
 const express = require("express");
 const http = require("http");
 
-const { modules_dir } = require("../paths");
+const {
+  project_root,
+  modules_dir,
+  dist_dir,
+  index_html_file,
+} = require("../paths");
 const modules = fs.readdirSync(modules_dir);
 
 const app = express();
@@ -15,6 +20,11 @@ const server = http.createServer(app);
 app.disable("x-powered-by");
 app.use(require("helmet")());
 app.use(require("cors")());
+
+app.use("/", express.static(dist_dir));
+app.get("/", (_, res) => {
+  return res.sendFile(index_html_file);
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

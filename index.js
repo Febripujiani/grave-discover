@@ -1,6 +1,6 @@
 const { PORT } = require("./config");
-const { server } = require("./apps/express");
-const { DatabaseConnect } = require("./apps/knex");
+const { server } = require("./src/apps/express");
+const { DatabaseConnect } = require("./src/apps/knex");
 
 DatabaseConnect(() => {
   server.listen(PORT, () => {

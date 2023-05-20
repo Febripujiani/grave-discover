@@ -1,0 +1,62 @@
+name: 🚀 Deploy App...
+
+# Controls when the workflow will run
+on: # master = production
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: ["master"] # master, development, staging
+  pull_request:
+    branches: ["master"] # master, development, staging
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  SNAPSHOT_VERSION: ${{ format('{0}-SNAPSHOT', github.event.number) }}
+
+jobs:
+  app-deploy:
+    name: 🎉 Deploy to https://grave-discover.sipapasi.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: ✅ Use Node.js 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: 🕓 Delayed 10 Second
+        run: |
+          sleep 10
+
+      - name: 🌊 Install Dependencies
+        run: |
+          yarn install:fe
+
+      - name: ⚒️ Build
+        run: |
+          yarn build:fe
+
+      - name: 🚫 Remove node_modules
+        run: |
+          cd frontend && rm -rf node_modules
+
+      - name: 🔣 Rename index.js to app.js
+        run: |
+          mv index.js app.js
+
+      - name: 💾 Sync files to Server (FTP) 📡
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ftp.sipapasi.com
+          username: ${{ secrets.ftp_email }}
+          password: ${{ secrets.ftp_password }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+          protocol: ftps
+          # security: strict
+          log-level: verbose

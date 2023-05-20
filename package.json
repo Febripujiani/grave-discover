@@ -5,6 +5,8 @@
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
+    "install:fe": "cd frontend && yarn",
+    "build:fe": "cd frontend && yarn build",
     "dev": "npx nodemon",
     "bundle": "cd frontend && npx webpack --config client/webpack.config.js",
     "table:status": "npx knex migrate:status",
