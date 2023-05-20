@@ -30,6 +30,6 @@ app.get("/", async (req, res) => {
   }
 });
 
-router.use("/api/user", app);
-router.use("/api/user/v1", v1);
+router.use("/api/content", app);
+router.use("/api/content/v1", v1);
 module.exports = router;
