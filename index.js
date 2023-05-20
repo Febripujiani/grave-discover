@@ -1,4 +1,4 @@
-const { PORT } = require("./config");
+const { PORT } = require("./src/config");
 const { server } = require("./src/apps/express");
 const { DatabaseConnect } = require("./src/apps/knex");
 
