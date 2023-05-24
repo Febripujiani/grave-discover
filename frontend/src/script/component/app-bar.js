@@ -1,15 +1,10 @@
 class AppBar extends HTMLElement {
-  constructor() {
-    super();
-    this.shadowDOM = this.attachShadow({ mode: "open" });
-  }
-
   connectedCallback() {
     this.render();
   }
 
   render() {
-    this.shadowDOM.innerHTML = `
+    this.innerHTML = `
        <style>
            * {
                margin: 0;
@@ -30,8 +25,18 @@ class AppBar extends HTMLElement {
                align-item: center;
            }
        </style>
-       <h2>MOVIE APPS</h2>`;
+      <nav class="drawer" class="nav">
+         <div id="hamburger" tabindex="0">
+         <a id="menu" class="header__menu">☰</a>
+        </div>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="#">Beranda</a></li>
+          <li class="nav_item"><a href="#">Tentang</a></li>
+          <li class="nav_item"><a href="#" target="_blank">FAQ</a></li>
+          <li class="nav_item"><a href="#">Tim Kami</a></li>
+        </ul>
+      </nav>`;
   }
 }
 
-customElements.define("app-bar", AppBar);
+customElements.define('app-bar', AppBar);
