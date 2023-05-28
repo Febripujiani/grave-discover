@@ -15,6 +15,36 @@ main {
   margin: 32px auto;
 }
 
+// Navbar
+.navbar {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.app-bar__brand img{
+  width:100px;
+}
+
+.nav {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-link {
+  color:black;
+}
+
+//Jumbohero
+.tete {
+  background-image:url('../public/img/JumboTron.png');
+  color:yellow;
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Sesuaikan dengan tinggi gambar */
+  color: #fff;
+  
+}
+
 .Movie-list {
   display: block;
   margin-top: 32px;
