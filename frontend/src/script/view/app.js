@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import "regenerator-runtime";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles/style.css";
+import "../../styles/style.css";
 import "bootstrap";
 import routes from "../routes/routes";
 import UrlParser from "../routes/url-parse";
