@@ -21,8 +21,8 @@ main {
   border: none !important;
 }
 
-.app-bar__brand img{
-  width:100px;
+.app-bar__brand img {
+  width: 100px;
 }
 
 .nav {
@@ -31,18 +31,17 @@ main {
 }
 
 .nav-link {
-  color:black;
+  color: black;
 }
 
 //Jumbohero
 .tete {
-  background-image:url('../public/img/JumboTron.png');
-  color:yellow;
+  background-image: url("../public/img/JumboTron.png");
+  color: yellow;
   background-size: cover;
   background-position: center;
   height: 300px; /* Sesuaikan dengan tinggi gambar */
   color: #fff;
-  
 }
 
 .Movie-list {

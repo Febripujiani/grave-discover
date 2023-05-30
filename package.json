@@ -22,6 +22,7 @@
     "start": "node ./src"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "bootstrap": "^5.3.0-alpha3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
