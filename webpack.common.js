@@ -23,6 +23,20 @@ module.exports = {
           {
             loader: 'css-loader',
           },
+          {
+            loader: 'sass-loader',
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: () => [
+                  // eslint-disable-next-line global-require
+                  require('autoprefixer'),
+                ],
+              },
+            },
+          },
         ],
       },
       {

@@ -45,9 +45,37 @@ main {
   
 }
 
-.Movie-list {
-  display: block;
-  margin-top: 32px;
-  width: 100%;
-  padding: 16px;
+//About Section
+.about{
+  background:white !important;
 }
+
+.about_box {
+  background: #F6F5F5;
+  width: 440px;
+  height:358px;
+}
+
+.about_icons {
+  width:40px;
+  margin-top:17px;
+}
+
+.icon_background {
+  width: 100px;
+  height:100px;
+  margin-bottom: 20px;
+  background:#F97B22;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.row {
+  margin-top: 70px !important;
+}
+
+.orangefont {
+  color: #F97B22;
+}
+
+
