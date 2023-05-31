@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable no-undef */
 import App from "./script/view/app";
 import "./styles/style.css";

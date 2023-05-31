@@ -15,10 +15,11 @@ main {
   margin: 32px auto;
 }
 
-// Navbar
+/* // Navbar */
 .navbar {
   background-color: transparent !important;
   border: none !important;
+  background-color: #ffff;
 }
 
 .app-bar__brand img {
@@ -34,37 +35,65 @@ main {
   color: black;
 }
 
-//Jumbohero
-.tete {
-  background-image: url("../public/img/JumboTron.png");
-  color: yellow;
-  background-size: cover;
-  background-position: center;
-  height: 300px; /* Sesuaikan dengan tinggi gambar */
-  color: #fff;
+.btn-daftar {
+  background-color: #f97b22;
+  border-radius: 20px;
+  padding: 7px 30px;
 }
 
-//About Section
-.about{
-  background:white !important;
+.btn-masuk {
+  background-color: #f97b22;
+  border-radius: 20px;
+  padding: 7px 30px;
+}
+
+/* //Jumbohero */
+.jumboTron {
+  position: relative;
+}
+
+.img-jumbotron img {
+  width: 100%;
+  -webkit-filter: brightness(40%);
+}
+
+.text-jumbotron {
+  position: absolute;
+  top: 20rem;
+  color: #ffff;
+}
+
+.description-jumbotron {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.btn-detail {
+  background-color: #f97b22;
+  border-radius: 20px;
+  padding: 7px 30px;
+}
+/* //About Section */
+.about {
+  background: white !important;
+  width: 100%;
+  height: 100%;
 }
 
 .about_box {
-  background: #F6F5F5;
-  width: 440px;
-  height:358px;
+  background: #f6f5f5;
 }
 
 .about_icons {
-  width:40px;
-  margin-top:17px;
+  width: 40px;
+  margin-top: 17px;
 }
 
 .icon_background {
   width: 100px;
-  height:100px;
+  height: 100px;
   margin-bottom: 20px;
-  background:#F97B22;
+  background: #f97b22;
   padding: 10px;
   border-radius: 50%;
 }
@@ -74,7 +103,5 @@ main {
 }
 
 .orangefont {
-  color: #F97B22;
+  color: #f97b22;
 }
-
-
