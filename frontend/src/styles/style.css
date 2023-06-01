@@ -75,13 +75,26 @@ main {
 }
 /* //About Section */
 .about {
-  background: white !important;
-  width: 100%;
-  height: 100%;
+  padding: 50px;
+  font-weight: 200;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
-.about_box {
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.descripsi-tentang {
+  padding-top: 30px;
+}
+
+.about .about_box {
   background: #f6f5f5;
+  width: 400px;
+  padding: 20px;
 }
 
 .about_icons {
@@ -98,10 +111,63 @@ main {
   border-radius: 50%;
 }
 
-.row {
-  margin-top: 70px !important;
+/* .row {
+  margin-top: 30px;
+} */
+
+/* WHY US */
+.container {
+  background-color: #1d2939;
+  margin-top: 3rem;
+}
+
+.title-why-us {
+  padding-top: 50px;
+  font-weight: 200;
+}
+
+.title-why-us h1 {
+  font-size: 2rem;
+  color: #ffff;
 }
 
 .orangefont {
   color: #f97b22;
+}
+
+.wu-box {
+  background-color: #ffff;
+  position: relative;
+  padding: 40px;
+  box-shadow: inset;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  z-index: 100;
+  min-height: 200px;
+}
+
+.wu-box:hover {
+  color: #ffff;
+}
+
+.wu-box::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  background: #f97b22;
+  z-index: -99;
+  color: black;
+}
+
+.wu-box:hover::before {
+  width: 100%;
+}
+
+.img-why-us {
+  margin: 0 auto;
 }
