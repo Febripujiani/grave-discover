@@ -6,7 +6,7 @@
 }
 
 body {
-  background: rgb(238, 238, 238);
+  background: white;
 }
 
 main {
@@ -24,8 +24,43 @@ main {
 
 .app-bar__brand img {
   width: 100px;
+  margin-left: 130px;
+  margin-top: -10px;
 }
 
+.app-bar {
+  background:#00000000;
+  position: relative;
+  z-index: 2;
+}
+
+.app-bar a {
+  color: white;
+}
+
+.app-bar a:hover {
+  color: #f97b22;
+  cursor: pointer;
+}
+
+.app-bar button {
+  border: none;
+}
+
+.app-bar .btn-masuk {
+  border: 1.5px solid white;
+  background:rgba(0, 0, 0, 0.5);
+}
+
+.app-bar button:hover {
+  background-color: white;
+  color:#f97b22;
+}
+
+.app-bar button::after{
+  background-color: #f6f5f5;
+  border: none;
+}
 .nav {
   margin: 0 auto;
   text-align: center;
@@ -39,12 +74,14 @@ main {
   background-color: #f97b22;
   border-radius: 20px;
   padding: 7px 30px;
+  margin-right: 20px ;
 }
 
 .btn-masuk {
   background-color: #f97b22;
   border-radius: 20px;
   padding: 7px 30px;
+  margin-right: 20px;
 }
 
 /* //Jumbohero */
@@ -55,6 +92,8 @@ main {
 .img-jumbotron img {
   width: 100%;
   -webkit-filter: brightness(40%);
+  margin-top: -100px;
+  z-index: 1;
 }
 
 .text-jumbotron {
@@ -72,6 +111,7 @@ main {
   background-color: #f97b22;
   border-radius: 20px;
   padding: 7px 30px;
+  border: none;
 }
 /* //About Section */
 .about {
@@ -84,7 +124,7 @@ main {
 .row {
   display: flex;
   justify-content: space-between;
-  padding: 0 60px;
+  padding: 0 20px;
 }
 
 .descripsi-tentang {
@@ -95,6 +135,7 @@ main {
   background: #f6f5f5;
   width: 400px;
   padding: 20px;
+  border: none;
 }
 
 .about_icons {
@@ -118,7 +159,7 @@ main {
 /* WHY US */
 .container {
   background-color: #1d2939;
-  margin-top: 3rem;
+  width: 100%;
 }
 
 .title-why-us {
@@ -128,6 +169,10 @@ main {
 
 .title-why-us h1 {
   font-size: 2rem;
+  color: #ffff;
+}
+
+.title-why-us h2 {
   color: #ffff;
 }
 
@@ -171,3 +216,24 @@ main {
 .img-why-us {
   margin: 0 auto;
 }
+
+.container-why-us {
+  background-color: #1d2939;
+  width: 100%;
+  padding: 30px;
+}
+
+.card-why-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr;
+  gap: 40px;
+  width: 100%;
+}
+
+.card {
+  background-color: #ffff;
+  width: 260px;
+  height: 260px;
+}
+
