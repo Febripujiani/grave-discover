@@ -29,7 +29,7 @@ main {
 }
 
 .app-bar {
-  background:#00000000;
+  background: #00000000;
   position: relative;
   z-index: 2;
 }
@@ -49,15 +49,15 @@ main {
 
 .app-bar .btn-masuk {
   border: 1.5px solid white;
-  background:rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .app-bar button:hover {
   background-color: white;
-  color:#f97b22;
+  color: #f97b22;
 }
 
-.app-bar button::after{
+.app-bar button::after {
   background-color: #f6f5f5;
   border: none;
 }
@@ -74,7 +74,7 @@ main {
   background-color: #f97b22;
   border-radius: 20px;
   padding: 7px 30px;
-  margin-right: 20px ;
+  margin-right: 20px;
 }
 
 .btn-masuk {
@@ -133,7 +133,7 @@ main {
 
 .about .about_box {
   background: #f6f5f5;
-  width: 400px;
+  width: 350px;
   padding: 20px;
   border: none;
 }
@@ -236,4 +236,3 @@ main {
   width: 260px;
   height: 260px;
 }
-

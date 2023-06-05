@@ -1,3 +1,5 @@
+/* eslint-disable import/newline-after-import */
+/* eslint-disable comma-dangle */
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
 /* eslint-disable arrow-body-style */
@@ -40,6 +42,31 @@ for (let i = 0; i < modules.length; i++) {
   console.log(`✅ Module ${module} Loaded!`);
   app.use(require(path.join(modules_dir, module)));
 }
+
+// const routes = {
+//   "/": Home,
+//   "/home": "Home",
+//   "/login": "Login",
+//   "/register": "Register",
+//   "/profile": "Profile",
+//   "/care-orders-page": "CareOrdersPage",
+//   "/dashboard-admin-page": "DashboardAdminPage",
+//   "/grave-data-page": "GraveDataPage",
+//   "/dashboard-user-page": "DashboardUserPage",
+//   "/grave-care-page": "GraveCarePage",
+//   "/search-grave-page": "SearchGravePage",
+// };
+
+// Object.entries(routes).forEach(([route, page]) => {
+//   app.get(route, (_, res) => {
+//     const filePath = path.join(
+//       project_root,
+//       dist_dir,
+//       `${page.toLowerCase()}.html`
+//     );
+//     return res.sendFile(filePath);
+//   });
+// });
 
 // 404 : Page Not Found !!!
 app.all("*", (req, res) => {

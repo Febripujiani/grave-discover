@@ -1,7 +1,7 @@
 const DashboardUserPage = {
   async render() {
     return `
-            <h2>Dashboard Admin<h2>
+            <h2>Dashboard User<h2>
             `;
   },
 

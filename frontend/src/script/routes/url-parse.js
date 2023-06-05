@@ -1,4 +1,5 @@
 /* eslint-disable operator-linebreak */
+/* eslint-disable no-irregular-whitespace */
 const UrlParser = {
   parseActiveUrlWithCombiner() {
     const url = window.location.hash.slice(1).toLowerCase();
