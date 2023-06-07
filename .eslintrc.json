@@ -19,6 +19,7 @@
     "camelcase": 0,
     "quotes": 0,
     "no-unused-vars": 0,
-    "no-plusplus": 0
+    "no-plusplus": 0,
+    "no-undef": 0
   }
 }
