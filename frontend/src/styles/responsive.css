@@ -1,0 +1,43 @@
+/*Responsive Breakpoint*/
+
+/*Ukuran Mobile*/
+@media screen and (max-width:576px){
+    .wu-box {
+        max-height: 160px;
+      }
+}
+  
+@media screen and (min-width: 650px) {
+    .wu-box {
+        min-height: 160px;
+      }
+
+    .why-use-text{
+        font-size:14px;
+    }  
+
+    .why-use-title {
+        font-size:17px;
+    }
+}
+  
+@media screen and (min-width: 700px) {}
+  
+@media screen and (min-width:900px) {}
+
+@media screen and (min-width:1200px){
+    .about, .why-us {
+        max-width: 1200px;
+        }   
+    
+        .wu-box {
+            position: relative;
+            padding: 10px;
+            border-radius: 10px;
+            transition: 0.3s ease;
+            z-index: 100;
+            min-height: 200px;
+            max-height:280px;
+          }    
+}
+  
