@@ -2,6 +2,7 @@
 /* eslint-disable no-undef */
 import App from "./script/view/app";
 import "./styles/style.css";
+import "./styles/responsive.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const app = new App({
