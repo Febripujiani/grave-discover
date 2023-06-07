@@ -17,7 +17,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+
   </head>
   <body>
     <header class="app-bar">
@@ -123,38 +123,189 @@
 
     <!-- Start Why Choose Us & FAQ -->
     <div class="container-why-us">
-      <section class="why-us">
+      <section class="container-fluid why-us">
         <div class="title-why-us fw-bold">
           <h1>Mengapa Anda harus menggunakan</h1>
           <h2><span class="orangefont">Grave Discover</span>?</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-once="true">
+        <div class="row ">
+          <div class="col-md-6 border border-alert " data-aos="fade-up" data-aos-once="true">
               <img
-                src="./icons/icon-faq.png" class="img-fluid img-why-us"
+                src="./icons/icon-faq.png" class="img-fluid mx-auto d-block "
                 alt="img faq"
-                width="330px"
-                height="330px"
+                width="450px"
+                height="450px"
               />
-
+          </div>  
             <!-- card why us -->
-            <div class="card-why-us">
-              <div class="card">
-
+            <div class="col-md-6 col-md-4 ">
+           <div class="container-lg">   
+            <div class="row row-cols-2  mt-5">
+              <div class="card col-6 mb-5" style="width: 300px;">
+                <img class="why_icons col  mt-4 mb-2" src="./icons/Vector.png" />
+                <h5 class="orangefont ">Mudah Digunakan</h5>
+                <p class="">Tampilan desain website dengan memperhatikan kemudahan anda dalam menggunakan aplikasi Grave Discover.</p>
               </div>
-              <div class="card">
-
+              <div class="card col-6 mb-5" style="width: 300px;">
+                <img class="why_icons col mt-4 mb-2" src="./icons/Clock.png" />
+                <h5 class="orangefont">Efisien</h5>
+                <p class="">Grave Discover menyediakan fitur yang efisien untuk mencatat dan mengelola data jenazah dengan cepat dan terorganisir.</p>
               </div>
-              <div class="card">
-
+              <div class="card col-6 mb-5" style="width: 300px;">
+                <img class="why_icons col mt-4 mb-2" src="./icons/Globe2.png" />
+                <h5 class="orangefont">Akses Dimana Saja, Kapan Saja</h5>
+                <p class="">Akses aplikasi secara online, memungkinkan Anda memesan perawatan makam dan menemukan lokasi makam kapan pun dan di mana pun Anda berada.</p>
               </div>
-              <div class="card">
+              <div class="card col-6 mb-5" style="width: 300px;">
+                <img class="why_icons col mt-4 mb-2" src="./icons/Vector (1).png" />
+                <h5 class="orangefont">Temukan Dengan Mudah</h5>
+                <p class="">Grave Discover memberikan kemudahan bagi pengguna untuk menemukan lokasi makam orang terkasih dengan cepat dan akurat, tanpa perlu repot mencari secara manual.</p>
+              </div>
+            </div> 
+          </div>
+            </div>
+        </div>    
+      </section>
 
+      <section class="FAQ-container">
+        <div>
+        <h1 class=" text-white text-center">Yang Sering <span class="orangefont">Ditanyakan</span></h1>
+       </div>
+       <div class="FAQ">
+        <div class="accordion dropdown-master" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h4 class="text-white">Apa itu Grave Discover?</h4>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Grave Discover</strong> merupakan aplikasi berbasis website untuk memudahkan pengurus makam dalam mengelola pemakaman. Aplikasi ini juga memudahkan pengguna untuk melakukan pemesanan perawatan makam dan mencari lokasi makam yang akan dikunjungi. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h4 class="text-white">Bagaimana cara menambah data makam pada aplikasi?</h4>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>Masuk ke halaman beranda terlebih dahulu.</li>
+                  <li>Pilih fitur “Data Makam”.</li>
+                  <li>Silakan klik tombol “Tambah Data” </li>
+                  <li>Isi dengan lengkap formulir data jenazah, lalu klik “Simpan”.</li>
+                  <li>Selesai, data makam telah ditambahkan.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h4 class="text-white">Bagaimana cara memesan perawatan makan?</h4>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>Masuk ke halaman beranda terlebih dahulu.</li>
+                  <li>Pilih fitur “Pesan Perawatan Makam”.</li>
+                  <li>Silakan klik tombol “Pesan </li>
+                  <li>Isi dengan lengkap formulir pemesanan, lalu klik “Pesan”.</li>
+                  <li>Selesai, pesanan Anda akan segera di lakukan.</li>
+                  <li>Cek secara berkala agar Anda mengetahui bahwa pesanan telah dikerjakan selesai.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h4 class="text-white">Bagaimana cara mencari lokasi makam?</h4>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>Masuk ke halaman beranda terlebih dahulu.</li>
+                  <li>Pilih fitur “Cari Lokasi”.</li>
+                  <li>Masukkan nama lengkap jenazah dengan benar. </li>
+                  <li>Klik pada tombol “cari” maka lokasi makam akan ditampilkan.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div> 
+      </section>
+
+
+      <!-- Team Section -->
+      <section class="team-section">
+        <h1 class="text-white text-center mb-5 mt-5">Tim <span class="orangefont">Grave Discover</span></h1>
+        <div class="container text-center">
+          <div class="row row-cols-4">
+            <div class="card-profile col">
+              <div class="team-profiles-pic">
+              <img src="./img/blankpic.png" alt="Team Picture">
+              </div>
+              <h4>Zein Hasyim</h4>
+              <h5>Frontend Developer</h5>
+              <div class="icons-block d-flex justify-content-center">
+                <button class="social-media-icons"><i><img src="./icons/Github.png" alt="Github-icon"></i></button>
+                <button class="social-media-icons"><i><img src="./icons/Instagram.png" alt="Instagram-icon"></i></button>
+                <button class="social-media-icons"><i><img src="./icons/Linkedin.png" alt="Linkedin-icon"></i></button>
+              </div>
+            </div>
+            <div class="card-profile col">
+              <div class="team-profiles-pic">
+                <img src="./img/blankpic.png" alt="Team Picture">
+                </div>
+              <h4>Zein Hasyim</h4>
+              <h5>Frontend Developer</h5>
+              <div class="icons-block d-flex justify-content-center">
+                <button class="social-media-icons"><i><img src="./icons/Github.png" alt="Github-icon"></i></button>
+                <button class="social-media-icons"><i><img src="./icons/Instagram.png" alt="Instagram-icon"></i></button>
+                <button class="social-media-icons"><i><img src="./icons/Linkedin.png" alt="Linkedin-icon"></i></button>
+              </div>
+            </div>
+            <div class="card-profile col">
+              <div class="team-profiles-pic">
+              <img src="./img/blankpic.png" alt="Team Picture">
+              </div>
+              <h4>Zein Hasyim</h4>
+              <h5>Frontend Developer</h5>
+              <div class="icons-block d-flex justify-content-center">
+                <button class="social-media-icons"><i><img src="./icons/Github.png" alt="Github-icon"></i></button>
+                <button class="social-media-icons"><i><img src="./icons/Instagram.png" alt="Instagram-icon"></i></button>
+                <button class="social-media-icons"><i><img src="./icons/Linkedin.png" alt="Linkedin-icon"></i></button>
+              </div>
+            </div>
+            <div class="card-profile col">
+              <div class="team-profiles-pic">
+              <img src="./img/blankpic.png" alt="Team Picture">
+              </div>
+              <h4>Fersak</h4>
+              <h5>Frontend Developer</h5>
+              <div class="icons-block d-flex justify-content-center">
+                <button class="social-media-icons"><i><img src="./icons/Github.png" alt="Github-icon"></i></button>
+                <button class="social-media-icons"><i><img src="./icons/Instagram.png" alt="Instagram-icon"></i></button>
+                <button class="social-media-icons"><i><img src="./icons/Linkedin.png" alt="Linkedin-icon"></i></button>
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
+
+ <footer>
+    <h3 class="text-center">Grave Discover</h3>
+ </footer>
+
+    
   </body>
 </html>

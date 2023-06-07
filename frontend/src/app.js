@@ -2,6 +2,8 @@
 import "regenerator-runtime";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/style.css";
+import "../../styles/responsive.css";
+import '../../styles/style.scss';
 import "bootstrap";
 // import './script/component/app-bar';
 // import main from './script/view/main';

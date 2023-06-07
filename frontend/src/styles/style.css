@@ -5,12 +5,16 @@
   font-family: "Inter", sans-serif;
 }
 
-body {
-  background: white;
+body, html {
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x:hidden;
 }
 
 main {
-  width: 90%;
+  width: 100%;
   max-width: 800px;
   margin: 32px auto;
 }
@@ -110,8 +114,13 @@ main {
 .btn-detail {
   background-color: #f97b22;
   border-radius: 20px;
+  border-color:#f97b22;
   padding: 7px 30px;
-  border: none;
+}
+
+.btn-detail:hover {
+  background-color: white;
+  color:#f97b22;
 }
 /* //About Section */
 .about {
@@ -214,7 +223,11 @@ main {
 }
 
 .img-why-us {
-  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
 }
 
 .container-why-us {
@@ -237,3 +250,78 @@ main {
   height: 260px;
 }
 
+.why_icons {
+  max-width: 37px;
+  max-height: 38px;
+}
+
+
+// FAQ Dropdown
+.FAQ-container {
+margin-top:50px;
+}
+
+.FAQ {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:40px;
+}
+.dropdown-master{
+  width:60%;
+}
+
+.accordion-button {
+  background-color:#f97b22;
+  &:not(.collapsed) {
+    background-color:#eb690c;
+  }
+}
+
+
+// Team Section
+
+.icons-block {
+
+}
+
+.social-media-icons {
+  min-width:44px;
+  min-height:44px;
+  margin-top:20px;
+}
+
+.social-media-icons {
+  border:none;
+  background-color:#ffff;
+}
+
+.team-profiles-pic img{
+  width:150px;
+  height:160px;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  transform: translate3d(0px, 0px, 0px)
+}
+
+.team-profiles-pic img:hover {
+  transform: translate3d(0px, -50%, 0px);
+  margin: 0
+}
+
+.card-profile {
+  background-color: #ffff;
+  width: 260px;
+  height: 300px;
+  border-radius:10px;
+}
+
+//footer
+
+footer {
+  width:100%;
+  height:300px;
+  background: white;
+  padding: 50px;
+}
