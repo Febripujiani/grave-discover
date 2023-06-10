@@ -24,6 +24,10 @@ main {
   background-color: #ffff;
 }
 
+.navbar-toggler {
+  background-color: #f97b22;
+}
+
 .app-bar__brand img {
   width: 100px;
   margin-left: 130px;
@@ -40,7 +44,13 @@ main {
   color: white;
 }
 
-.app-bar a:hover {
+.nav-item a {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.nav-link:hover {
   color: #f97b22;
   cursor: pointer;
 }
@@ -63,30 +73,63 @@ main {
   background-color: #f6f5f5;
   border: none;
 }
+
 .nav {
   margin: 0 auto;
   text-align: center;
+}
+
+.collapse {
+  z-index: 1;
 }
 
 .nav-link {
   color: black;
 }
 
-.btn-daftar {
-  background-color: #f97b22;
+.btn-masuk {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
   border-radius: 20px;
+  border-color: white;
   padding: 7px 30px;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
-.btn-masuk {
+.btn-daftar {
+  color: white;
+  font-weight: bold;
   background-color: #f97b22;
   border-radius: 20px;
+  border-color: #f97b22;
   padding: 7px 30px;
-  margin-right: 20px;
+  margin-right: 5px;
+}
+
+.btn-daftar:hover {
+  background-color: white;
+  color: #f97b22;
+}
+
+.btn-masuk:hover {
+  background-color: #f97b22;
+  color: white;
 }
 
 /* //Jumbohero */
+.hero {
+  position: absolute;
+  top: 308px;
+  left: 0;
+  width: 100%;
+}
+
+.hero-title,
+p {
+  max-width: 41.5rem;
+}
+
 .jumboTron {
   position: relative;
 }
@@ -144,6 +187,7 @@ main {
   width: 350px;
   padding: 20px;
   border: none;
+  margin: 5px;
 }
 
 .about_icons {
@@ -200,6 +244,10 @@ main {
 }
 
 .wu-box:hover {
+  color: #ffff !important;
+}
+
+.wu-box:hover h5 {
   color: #ffff;
 }
 
@@ -252,7 +300,6 @@ main {
   max-height: 20px;
 }
 
-// FAQ Dropdown
 .FAQ-container {
   margin-top: 50px;
 }
@@ -274,9 +321,21 @@ main {
   }
 }
 
-// Team Section
+/* .icons-block {
+} */
 
-.icons-block {
+.icons-block a {
+  list-style: none;
+  margin: 0 6px;
+  font-size: 28.5px;
+  color: #3c3c3c;
+}
+
+.icons-block a {
+  list-style: none;
+  margin: 0 6px;
+  font-size: 28.5px;
+  color: #3c3c3c;
 }
 
 .social-media-icons {
@@ -298,25 +357,26 @@ main {
   transition: all 0.6s;
   transform: translate3d(0px, 0px, 0px);
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .team-profiles-pic img:hover {
   transform: translate3d(0px, -50%, 0px);
   margin: 0;
+  border-radius: 50%;
 }
 
 .card-profile {
   background-color: #ffff;
-  width: 300px;
-  height: 340px;
+  width: 245px;
+  height: 320px;
   border-radius: 10px;
+  margin: 13px;
 }
-
-//footer
 
 footer {
   width: 100%;
-  height: 300px;
+  height: auto;
   background: white;
   padding: 50px;
 }
