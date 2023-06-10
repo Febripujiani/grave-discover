@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable spaced-comment */
 import CareOrdersPage from "../view/pages/admin/care-orders-page";
 import DashboardAdminPage from "../view/pages/admin/dashboard-admin-page";

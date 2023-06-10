@@ -1,3 +1,4 @@
+/* eslint-disable spaced-comment */
 const path = require("path");
 
 exports.project_root = process.cwd();
@@ -10,7 +11,7 @@ exports.migrations_dir = path.join(
   this.project_root,
   "src",
   "models",
-  "migrations"
+  "migrations",
 );
 exports.seeds_dir = path.join(this.project_root, "src", "models", "seeds");
 

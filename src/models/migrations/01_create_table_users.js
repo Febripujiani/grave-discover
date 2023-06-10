@@ -1,3 +1,6 @@
+/* eslint-disable func-names */
+/* eslint-disable spaced-comment */
+/* eslint-disable prefer-arrow-callback */
 const { tables, user_roles } = require("../../config");
 const encryption = require("../../utils/encryption");
 

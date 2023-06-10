@@ -31,6 +31,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
+    "jpegtran-bin": "^7.0.0",
     "jquery": "^3.6.4",
     "regenerator-runtime": "^0.13.9"
   }
